@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Sharma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="avatar.jpg" alt="Utsav Sharma" class="avatar">
+            <h1>Utsav Sharma</h1>
+            <p class="tagline">Student & Researcher | ZK, Cryptography, Blockchain</p>
+            <nav class="social-links">
+                <a href="https://github.com/x-senpai-x" target="_blank">GitHub</a>
+                <a href="https://twitter.com/0x_senpai_x" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/utsav-sharma-84a6631b9" target="_blank">LinkedIn</a>
+                <button id="theme-toggle" aria-label="Toggle theme"></button>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I'm a Mathematics & Computing student at IIT Roorkee, focusing on zero-knowledge cryptography,
+                post-quantum algorithms, and blockchain protocols. Currently an Ethereum Protocol Fellow and
+                DeFi Backend Engineer at Enclave. I build tools in Go and Rust.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/ReamLabs/ream" target="_blank">Ream</a>
+                    <span class="separator">—</span>
+                    <span class="desc">Ethereum lean client written in Rust</span>
+                </li>
+                <li>
+                    <a href="https://github.com/x-senpai-x/Ream-ZKVM-Benchmarks" target="_blank">zkVM Benchmarks</a>
+                    <span class="separator">—</span>
+                    <span class="desc">Benchmarking zkVMs for Ream consensus (EPF project)</span>
+                </li>
+                <li>
+                    <a href="https://github.com/x-senpai-x/selene" target="_blank">Selene</a>
+                    <span class="separator">—</span>
+                    <span class="desc">Ethereum light client in Go</span>
+                </li>
+                <li>
+                    <a href="https://github.com/BlocSoc-iitr/Deimos" target="_blank">Deimos</a>
+                    <span class="separator">—</span>
+                    <span class="desc">Mobile-side benchmarking for zkVMs</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="writing">
+            <h2>Writing</h2>
+            <p>I write about cryptography and zero-knowledge proofs on <a href="https://0xsenpai.substack.com" target="_blank">Substack</a>.</p>
+            <ul>
+                <li><a href="https://0xsenpai.substack.com" target="_blank">Understanding Hash-Based Digital Signatures</a></li>
+                <li><a href="https://0xsenpai.substack.com" target="_blank">Zero-Knowledge Proofs: Beyond the Hype</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Ethereum Protocol Fellow · EthOnline 2024 Winner · Based India Finalist</p>
+        </footer>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            html.setAttribute('data-theme', 'dark');
+        }
+
+        toggle.addEventListener('click', () => {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        });
+    </script>
+</body>
+</html>

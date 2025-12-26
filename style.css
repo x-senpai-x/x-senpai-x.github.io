@@ -81,14 +81,30 @@ h1 {
     text-decoration: underline;
 }
 
+.resume-link {
+    padding: 4px 12px;
+    border: 1px solid var(--link);
+    border-radius: 4px;
+}
+
+.resume-link:hover {
+    background: var(--link);
+    color: var(--bg);
+    text-decoration: none;
+}
+
 #theme-toggle {
-    background: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     cursor: pointer;
-    position: relative;
+    z-index: 100;
+    transition: background 0.3s, border 0.3s;
 }
 
 #theme-toggle::before {

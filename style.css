@@ -164,8 +164,34 @@ footer {
     padding-top: 20px;
     border-top: 1px solid var(--border);
     text-align: center;
-    color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+.interests-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.interests-link:hover {
+    color: var(--link);
+}
+
+.minimal-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    color: var(--link);
 }
 
 @media (max-width: 480px) {

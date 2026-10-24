@@ -5,145 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utsav Sharma</title>
-    <meta name="description" content="Utsav Sharma, Mathematics & Computing student at IIT Roorkee.">
+    <meta name="description" content="Mathematics & Computing student at IIT Roorkee, working on backend systems and zero-knowledge cryptography.">
+    <meta property="og:title" content="Utsav Sharma">
+    <meta property="og:description" content="Backend systems and zero-knowledge cryptography.">
+    <meta property="og:image" content="https://x-senpai-x.github.io/avatar.jpg">
+    <meta property="og:url" content="https://x-senpai-x.github.io/">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="avatar.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button id="theme-toggle" aria-label="Toggle theme"></button>
-    <div class="container">
-        <header>
+    <main class="container">
+        <header class="intro">
+            <div>
+                <h1>Utsav Sharma</h1>
+                <p>
+                    I'm a Mathematics & Computing student at IIT Roorkee. I work on backend systems and
+                    zero-knowledge cryptography, mostly in Go and Rust.
+                </p>
+                <p class="links">
+                    <a href="mailto:utsav_s@ma.iitr.ac.in">Email</a> ·
+                    <a href="resume.pdf">Resume</a> ·
+                    <a href="https://github.com/x-senpai-x">GitHub</a> ·
+                    <a href="https://linkedin.com/in/utsav-sharma-84a6631b9">LinkedIn</a> ·
+                    <a href="https://x.com/0x_senpai_x">X</a>
+                </p>
+            </div>
             <img src="avatar.jpg" alt="Utsav Sharma" class="avatar">
-            <h1>Utsav Sharma</h1>
-            <p class="tagline">Student & Engineer | Backend systems, ZK, Cryptography</p>
-            <nav class="social-links">
-                <a href="https://github.com/x-senpai-x" target="_blank">GitHub</a>
-                <a href="https://twitter.com/0x_senpai_x" target="_blank">Twitter</a>
-                <a href="https://linkedin.com/in/utsav-sharma-84a6631b9" target="_blank">LinkedIn</a>
-                <a href="https://codeforces.com/profile/frustratedaf" target="_blank">Codeforces</a>
-                <a href="resume.pdf" target="_blank" class="resume-link">Resume</a>
-            </nav>
         </header>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                I'm a Mathematics & Computing student at <strong>IIT Roorkee</strong>. I work on backend systems and
-                zero-knowledge cryptography, mostly in Go and Rust.
-            </p>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
+        <section>
+            <h2>Work</h2>
+            <ul class="dated">
                 <li>
-                    <strong>Software Engineer</strong> <span class="separator">·</span>
-                    <a href="https://usetrinity.ai/" target="_blank">Trinity</a>
                     <span class="date">Jul 2026 - Oct 2026</span>
-                    <div class="desc">Integrations, meetings and forecasting for an AI project manager</div>
+                    <div>
+                        Software Engineer, <a href="https://usetrinity.ai/">Trinity</a>
+                        <div class="note">Integrations, meetings and forecasting for an AI project manager</div>
+                    </div>
                 </li>
                 <li>
-                    <strong>Protocol Engineer</strong> <span class="separator">·</span>
-                    <a href="https://atheon.xyz/" target="_blank">Atheon</a>
                     <span class="date">May 2026 - Jun 2026</span>
-                    <div class="desc">Research on moving the Jolt zkVM to hash-based commitments</div>
+                    <div>
+                        Protocol Engineer, <a href="https://atheon.xyz/">Atheon</a>
+                        <div class="note">Research on moving the Jolt zkVM to hash-based commitments</div>
+                    </div>
                 </li>
                 <li>
-                    <strong>ZK Cryptography Engineer</strong> <span class="separator">·</span>
-                    <a href="https://atheon.xyz/" target="_blank">Atheon</a>
                     <span class="date">Jan 2026 - Apr 2026</span>
-                    <div class="desc">Zero-knowledge passport verification in World Foundation's ProveKit</div>
+                    <div>
+                        ZK Cryptography Engineer, <a href="https://atheon.xyz/">Atheon</a>
+                        <div class="note">Zero-knowledge passport verification in World Foundation's ProveKit</div>
+                    </div>
                 </li>
                 <li>
-                    <strong>Ethereum Protocol Fellow</strong> <span class="separator">·</span>
-                    <a href="https://github.com/eth-protocol-fellows/cohort-six" target="_blank">Cohort 6</a>
-                    <span class="date">Jun 2025 - Nov 2025</span>
-                    <div class="desc">Benchmarked zkVMs on the Ream consensus client</div>
-                </li>
-                <li>
-                    <strong>Software Engineer</strong> <span class="separator">·</span>
-                    <a href="https://enclave.money/" target="_blank">Enclave</a>
                     <span class="date">Jul 2025 - Nov 2025</span>
-                    <div class="desc">MagicSpend++ on Solana and EVM: spend on any chain without bridging</div>
+                    <div>
+                        Software Engineer, <a href="https://enclave.money/">Enclave</a>
+                        <div class="note">MagicSpend++ on Solana and EVM: spend on any chain without bridging</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">Jun 2025 - Nov 2025</span>
+                    <div>
+                        Ethereum Protocol Fellow, <a href="https://github.com/eth-protocol-fellows/cohort-six">Cohort 6</a>
+                        <div class="note">Benchmarked zkVMs on the Ream consensus client</div>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <section id="projects">
+        <section>
             <h2>Projects</h2>
-            <ul>
+            <ul class="plain">
+                <li><a href="https://github.com/x-senpai-x/sqlDbEngine">SQL Database Engine</a>: a SQL database in
+                    Rust, written from scratch</li>
+                <li><a href="https://github.com/x-senpai-x/Ream-ZKVM-Benchmarks">zkVM Benchmarks</a>: Ethereum
+                    consensus tests running inside different zkVMs</li>
+                <li><a href="https://github.com/x-senpai-x/fitbridge">fitbridge</a>: lets ChatGPT and Claude read your
+                    Android health data</li>
+                <li><a href="https://github.com/BlocSoc-iitr/Deimos">Deimos</a>: benchmarks for zero-knowledge proving
+                    on phones</li>
+                <li><a href="https://github.com/x-senpai-x/selene">Selene</a>: an Ethereum light client in Go</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Writing and talks</h2>
+            <ul class="dated">
                 <li>
-                    <a href="https://github.com/x-senpai-x/sqlDbEngine" target="_blank">SQL Database Engine</a>
-                    <span class="separator">·</span>
-                    <span class="desc">A SQL database in Rust, written from scratch</span>
+                    <span class="date">Nov 2025</span>
+                    <div><a href="https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/Skka82mgWe">EPF Cohort 6 final update</a>
+                        and <a href="https://docs.google.com/presentation/d/1actZIyC2c9mLx3X89H4EqLacxVPaf7ZPboQf9Mf-nWw/edit?usp=sharing">slides</a></div>
                 </li>
                 <li>
-                    <a href="https://github.com/x-senpai-x/Ream-ZKVM-Benchmarks" target="_blank">zkVM Benchmarks</a>
-                    <span class="separator">·</span>
-                    <span class="desc">Running Ethereum consensus tests inside different zkVMs</span>
+                    <span class="date">Nov 2025</span>
+                    <div><a href="https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/S1LmQvPgbx">Benchmarking zkVMs on the Ream
+                            consensus client</a>, with Dimitrios</div>
                 </li>
                 <li>
-                    <a href="https://github.com/x-senpai-x/fitbridge" target="_blank">fitbridge</a>
-                    <span class="separator">·</span>
-                    <span class="desc">Lets ChatGPT and Claude read your Android health data</span>
+                    <span class="date">Aug 2025</span>
+                    <div><a href="https://0xsenpai.substack.com/p/3-slot-finality-the-next-evolution">3-Slot Finality:
+                            The Next Evolution in Ethereum Consensus</a></div>
                 </li>
                 <li>
-                    <a href="https://github.com/BlocSoc-iitr/Deimos" target="_blank">Deimos</a>
-                    <span class="separator">·</span>
-                    <span class="desc">Benchmarks for zero-knowledge proving on phones</span>
+                    <span class="date">Apr 2025</span>
+                    <div><a href="https://0xsenpai.substack.com/p/understanding-ethereums-randao-mechanism">Understanding
+                            Ethereum's RANDAO Mechanism</a></div>
                 </li>
                 <li>
-                    <a href="https://github.com/x-senpai-x/selene" target="_blank">Selene</a>
-                    <span class="separator">·</span>
-                    <span class="desc">Ethereum light client in Go</span>
+                    <span class="date">Apr 2025</span>
+                    <div><a href="https://0xsenpai.substack.com/p/hash-based-signatures-beyond-one">Hash-Based Signatures:
+                            Beyond One-Time Use</a></div>
+                </li>
+                <li>
+                    <span class="date">Mar 2025</span>
+                    <div><a href="https://0xsenpai.substack.com/p/hash-based-signatures-a-quantum-resistant">Hash-Based
+                            Signatures: A Quantum-Resistant Future?</a></div>
                 </li>
             </ul>
         </section>
 
-        <section id="writing">
-            <h2>Writing</h2>
-            <p>I write about cryptography and zero-knowledge proofs on <a href="https://0xsenpai.substack.com"
-                    target="_blank">Substack</a>.</p>
-            <ul>
-                <li><a href="https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/Skka82mgWe" target="_blank">Benchmarking zkVM
-                        performance on Ream</a> <span class="separator">·</span> <span class="desc">EPF final
-                        report</span></li>
-                <li><a href="https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/S1LmQvPgbx" target="_blank">Benchmarking zkVMs on
-                        STF</a></li>
+        <section>
+            <h2>Currently learning</h2>
+            <ul class="plain">
+                <li>Category theory and Haskell, from Bartosz Milewski's <a
+                        href="https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">Category
+                        Theory for Programmers</a> and his <a
+                        href="https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_">lectures</a></li>
             </ul>
         </section>
 
-        <section id="reading">
-            <h2>Current Readings</h2>
-            <ul>
-                <li>
-                    <a href="https://www.ic.unicamp.br/~rdahab/cursos/mo421-mc889/Welcome_files/Stinson-Paterson_CryptographyTheoryAndPractice-CRC%20Press%20(2019).pdf"
-                        target="_blank">Cryptography: Theory and Practice</a>
-                    <span class="separator">·</span>
-                    <span class="desc">Stinson & Paterson</span>
-                </li>
+        <section>
+            <h2>Elsewhere</h2>
+            <ul class="plain">
+                <li>Winner at ETHOnline 2024 and Agentic Ethereum 2025 (ETHGlobal)</li>
+                <li>Side projects in <a href="interests.html">quantitative finance</a></li>
             </ul>
         </section>
-
-        <footer>
-            <a href="interests.html" class="interests-link">Also into quantitative finance &rarr;</a>
-        </footer>
-    </div>
-
-    <script>
-        const toggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-
-        if (localStorage.getItem('theme') === 'dark') {
-            html.setAttribute('data-theme', 'dark');
-        }
-
-        toggle.addEventListener('click', () => {
-            const isDark = html.getAttribute('data-theme') === 'dark';
-            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-            localStorage.setItem('theme', isDark ? 'light' : 'dark');
-        });
-    </script>
+    </main>
 </body>
 
 </html>

@@ -159,6 +159,24 @@ ul li {
     color: var(--text-secondary);
 }
 
+.date {
+    float: right;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
+}
+
+#experience .desc {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+    .date {
+        float: none;
+        display: block;
+    }
+}
+
 footer {
     margin-top: 60px;
     padding-top: 20px;
